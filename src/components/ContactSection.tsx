@@ -19,28 +19,28 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenChat }) =>
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-start">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-10 items-start">
           
           {/* Left Column: Direct Business Details & Contact Cards */}
-          <div className="lg:col-span-5 space-y-6">
+          <div className="lg:col-span-6 space-y-5">
             
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/20 text-amber-300 text-xs font-bold uppercase tracking-wider border border-amber-500/30">
               <Shield className="w-3.5 h-3.5 text-amber-400" />
               <span>Contact 2nd Gen Roofing</span>
             </div>
 
-            <h2 className="text-3xl sm:text-4xl font-black text-white tracking-tight leading-tight">
+            <h2 className="text-2xl sm:text-3xl font-black text-white tracking-tight leading-tight">
               Let's Talk About Your Roof. <br />
               <span className="text-amber-400">Two Generations Ready to Help.</span>
             </h2>
 
-            <p className="text-slate-300 text-sm sm:text-base leading-relaxed">
+            <p className="text-slate-300 text-xs sm:text-sm leading-relaxed">
               Have questions about a leak, considering an architectural shingle or tile replacement, 
               or need an honest second opinion? Reach out directly to Alejandro and AJ Amaya today.
             </p>
 
             {/* Direct Contact Methods Cards */}
-            <div className="space-y-3 pt-2">
+            <div className="space-y-2.5 pt-1">
               
               {/* Phone */}
               <a
@@ -144,7 +144,7 @@ export const ContactSection: React.FC<ContactSectionProps> = ({ onOpenChat }) =>
           </div>
 
           {/* Right Column: Embedded Lead Form */}
-          <div className="lg:col-span-7">
+          <div className="lg:col-span-6">
             <LeadForm />
           </div>
 
